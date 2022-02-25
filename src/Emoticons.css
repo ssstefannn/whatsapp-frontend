@@ -1,0 +1,70 @@
+.emoticons {
+  position: absolute;
+  padding: 10px;
+  padding-top: 0;
+  top: -298px;
+  left: -50px;
+  width: 300px;
+  height: 256px;
+  overflow-y: scroll;
+  z-index: 2;
+  background-color: #cdcdcd;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px #888888;
+}
+
+/* width */
+.emoticons::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.emoticons::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.emoticons::-webkit-scrollbar-thumb {
+  background: rgb(82, 74, 74);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.emoticons::-webkit-scrollbar-thumb:hover {
+  background: #272525;
+}
+
+.emoticons__tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #aaa;
+}
+
+.emoticons__tab {
+  cursor: pointer;
+  flex: content;
+  text-align: center;
+  user-select: none;
+}
+
+.emoticons__tab:hover {
+  background-color: #888;
+}
+
+.emoticons__emoticonRow {
+  display: flex;
+  font-size: x-large;
+  justify-content: space-around;
+}
+
+.emoticons__emoticon {
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.emoticons__emoticon:hover {
+  background-color: #888;
+}
